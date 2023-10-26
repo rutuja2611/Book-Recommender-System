@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="travel.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>  
+   <link
+       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Staatliches&family=Varela+Round&display=swap"
+       rel="stylesheet">
+
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <div class="container2">
+
+        <div class="logo">
+            <a href="#">Your Buddy</a>
+        </div>
+ 
+    <div class="navbar">
+    
+    <ul id="nav-lists">
+        <li><a href="../index.html">Home</a></li>
+        <li ><a href="./about.html">About</a></li>
+        <li><a href="./blog.html">Blogs</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+        <li><a href="#">Booking</a></li>
+    </ul>
+    
+   
+</div>
+
+    </div>
+
+    <!-- book section starts  -->
+
+    <div class="background">
+    <img class="bgimg" src="https://images.unsplash.com/photo-1588487838036-28303ea2f560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+
+      <section class="book" id="book">
+    
+        <div class="row">
+    
+            <div class="image" >
+                <img id ="img" src="https://images.unsplash.com/photo-1588487838036-28303ea2f560?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="">
+            </div>
+    
+            <form action="" name="trip-form">             
+            
+                <div class="input-grp">
+                <label> <h3>Enter the Location You wish to visit..</h3></label>
+                <input class="inputBox form-control" type="text" placeholder="Enter Place Name" id="currentLocation">
+                </div>
+    
+                  <!-- Travel Preferences -->
+                  <div class="">
+                    <label for=""><h3>Enter your cuisine Requirement.</h3></label>
+                    <br>
+                    <select id="multiple-checkboxes" multiple="multiple">
+                        <option value="Central Air Conditioning">Indian cuisine</option>
+                        <option value="Laundry facilities">Thai cuisine</option>
+                        <option value="java">Mexican cuisine </option>
+                        <option value="sql">Chinese cuisine</option>
+                        <option value="jquery">Italian cuisine</option>
+                        <option value=".net">french cuisine</option>
+                    </select>
+                    
+                </div>
+
+                  <br>   
+                <input type="submit" class="button2" value="Customize my trip!">
+
+            </form>
+        
+        </div>
+    
+    </section>
+    
+    </div>
+    
+
+<script src="./travel.js"></script>
+
+</body>
+</html>
