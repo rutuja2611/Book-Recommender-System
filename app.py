@@ -1,14 +1,20 @@
+# import necessary files
 from flask import Flask,render_template,request
 import pickle
 import numpy as np
 
+
+# take the required data from pickle
 popular_df = pickle.load(open('popular.pkl','rb'))
 pt = pickle.load(open('pt.pkl','rb'))
 books = pickle.load(open('books.pkl','rb'))
 similarity_scores = pickle.load(open('similarity_scores.pkl','rb'))
 
+# create flask instance
 app = Flask(__name__)
 
+
+# for home page
 @app.route('/')
 def index():
     return render_template('index.html',
